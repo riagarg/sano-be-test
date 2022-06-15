@@ -16,7 +16,7 @@ flask run
 
 
 # Test tasks
-The test consist of creating an endpoint allows admin staff to place DNA Kit Orders on behalf of users.
+The test consist of creating a backoffice endpoint to allow our admin users to place DNA Kit Orders on behalf of users.
 
 1. Create an endpoint that allows admin staff to place DNA Kit Orders on behalf of users
 
