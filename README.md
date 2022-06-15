@@ -8,7 +8,9 @@ You should ideally aim to spend no longer than 3 hours on the tasks. If you canâ
 Please fork the repository ensuring your forked repository is private.
 
 # Installation
-Install all dependencies, and run the flask app using:
+This project was created using Python 3.8.10.
+
+Install all dependencies, and run the application using:
 ```
 export FLASK_ENV=development                                  
 flask run
