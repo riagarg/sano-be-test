@@ -23,7 +23,7 @@ The test consist of creating a backoffice endpoint to allow our admin users to p
 1. Create an endpoint that allows admin staff to place DNA Kit Orders on behalf of users
 
     1.1. placing an order should notify the user that the order was successfully placed. 
-    We also would like to be able to specify the notification type (`email` or `sms`). DNAKitOrders of type `whole-exome-sequencing` should notify users via sms while other types should notify them via email. See **Email/SMS Delivery API integrations** below.
+    We also would like to be able to specify the notification type (`email` or `sms`). DNAKitOrders of type `whole-exome-sequencing` should notify users via SMS while other types should notify them via email. See **Email/SMS Delivery API integrations** below.
 
 2. Update the existing `GET /users/` endpoint to return an additional `orders` property, containing all DNAKitOrders associated with each user.
 
