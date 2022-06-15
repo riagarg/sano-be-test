@@ -5,7 +5,7 @@ from schemas import UserSchema
 users_api = Blueprint("users_api", __name__)
 
 
-@users_api.route("/users")
+@users_api.route("/users", methods=["GET"])
 def get_all_users():
     all_users = User.select()
     data = UserSchema().dump(all_users, many=True)

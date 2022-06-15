@@ -23,9 +23,11 @@ The test consist of creating a backoffice endpoint to allow our admin users to p
     1.1. placing an order should notify the user that the order was successfully placed.
     We also would like to be able to specify the notification type (`email` or `sms`).
 
-2. Create a test for the above use case. The external delivery APIs should not be used during tests, as its usages is destined to production only. However, we do want to create tests for the notification logic.
+2. Update the existing `GET /users/ endpoint to return an additional `orders` property, containing all Orders associated with each user.
 
-### Notification API integration
+3. Create tests for the above use cases. Notice that, the external delivery APIs should not be accessed during server tests, as its usage is limited to production only. However, we do want to test for the notification logic/code.
+
+## Notification API integration
 The goal here is to replicate a scenario where we need to integrate our application with an external service.
 To make things simple, we've created two fake endpoints to mimic those external services:
 
@@ -34,30 +36,33 @@ To make things simple, we've created two fake endpoints to mimic those external 
 > `POST https://dev.sanogenetics.com/dev/home-test/email-delivery-service`
 
 API token is required on each request: `Authorization: Bearer <token>`
+
 token = `7lPIazekwQu7Raz7FqBQmsLvlH29IDwG`
 
 **SMS delivery API:**
 > `POST https://dev.sanogenetics.com/dev/home-test/sms-delivery-service`
 
 API token is required on each request: `Authorization: Bearer <token>`
+
 token = `o8deGqg2vTGYXtvIsA05zOW8ywAPBQuB`
 
 Both services expect an object in the following format:
 ```json
 {
     "recipient": "[email | phone]",
-    "message:" "Hi {{user_name}},
-    Your order has been successfully placed."
+    "message:" "Hi {{user_name}}, Your order has been successfully placed."
 }
 ```
 
 
 For context, here's some of the things we expect to assess in this test:
-* Documentation and clarity: doc strings, variable names, type hints, comments, breaking into smaller functions, etc.
-* Testing: unit tests, mocks, etc.
-* Architecture & System design: patterns, packaging, etc.
-* Web API: HTTP methods and status codes, REST principles, URL structure and encoding.
-* Error handling: Exceptions, transaction rollbacks, etc.
+* **Documentation and clarity:** doc strings, variable names, type hints, comments, breaking into smaller functions, etc.
+* **Testing:** unit tests, mocks, etc.
+* **Architecture & System design:** patterns, packaging, etc.
+* **Web API:** HTTP methods and status codes, REST principles, URL structure and encoding.
+* **Error handling:** Exceptions, transaction rollbacks, etc.
+
+Feel free to refactor the provided boilerplate code and update anything that you think doesn't look right or could be improved.
 
 If due to time constraints you prefer to take some shortcuts or if you know that in a real world scenario you would implement a particular logic/code in a better way, please feel free to leave comments thoughout your code explaining your alternative approach.
 
