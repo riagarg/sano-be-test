@@ -44,7 +44,7 @@ token = `7lPIazekwQu7Raz7FqBQmsLvlH29IDwG`
 **SMS delivery API:**
 > `POST https://dev.sanogenetics.com/dev/home-test/sms-delivery-service`
 
-API token is required on each request: `Authorization: Bearer <token>`
+An API token is required on each request: `Authorization: Bearer <token>`
 
 token = `o8deGqg2vTGYXtvIsA05zOW8ywAPBQuB`
 
