@@ -1,13 +1,12 @@
-from peewee import (
-    SqliteDatabase,
-    Model,
-    CharField,
-    DateTimeField,
-)
+from peewee import Model, CharField, DateTimeField, ForeignKeyField
 from datetime import datetime as dt
-
-db = SqliteDatabase("sano.db")
+from playhouse.sqlite_ext import SqliteExtDatabase, JSONField
 import shortuuid
+
+db = SqliteExtDatabase(
+    database="sano.db",
+    pragmas=(("foreign_keys", 1),),  # Enforce foreign-key constraints.
+)
 
 
 class BaseModel(Model):
@@ -32,13 +31,15 @@ class User(BaseModel):
     password_hash = CharField(255, null=True)
 
 
-class Order(BaseModel):
-    name = CharField()
-    description = CharField()
-    quantity = CharField()
-    total = CharField()
+class DNAKitOrder(BaseModel):
+    sequencing_type = CharField()  # ex: whole-exome-sequencing, targeted-sequencing
+    user = ForeignKeyField(User, backref="orders")
+    # shipping_info examle: {"country": "GB", "delivery_name": "John Smith", "first_line": "38 Charlie Road", "postcode": "", "second_line": "", "town": "Cambridge"}
+    shipping_info = JSONField()
+
+    # TODO: how can we represent different states of an order? Ex: pending, in-progress, completed, etc.
 
 
 def create_tables():
     with db:
-        db.create_tables([User, Order], safe=True)
+        db.create_tables([User, DNAKitOrder], safe=True)
