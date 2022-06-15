@@ -20,16 +20,16 @@ The test consist of creating a backoffice endpoint to allow our admin users to p
 
 1. Create an endpoint that allows admin staff to place DNA Kit Orders on behalf of users
 
-    1.1. placing an order should notify the user that the order was successfully placed.
-    We also would like to be able to specify the notification type (`email` or `sms`).
+    1.1. placing an order should notify the user that the order was successfully placed. 
+    We also would like to be able to specify the notification type (`email` or `sms`). DNAKitOrders of type `whole-exome-sequencing` should notify users via sms while other types should notify them via email. See **Email/SMS Delivery API integrations** below.
 
-2. Update the existing `GET /users/ endpoint to return an additional `orders` property, containing all Orders associated with each user.
+2. Update the existing `GET /users/` endpoint to return an additional `orders` property, containing all DNAKitOrders associated with each user.
 
 3. Create tests for the above use cases. Notice that, the external delivery APIs should not be accessed during server tests, as its usage is limited to production only. However, we do want to test for the notification logic/code.
 
-## Notification API integration
+## Email/SMS Delivery API integrations
 The goal here is to replicate a scenario where we need to integrate our application with an external service.
-To make things simple, we've created two fake endpoints to mimic those external services:
+To make things simple, we've created two fake endpoints (they won't actually send emails nor SMSs) to mimic those external services:
 
 **Email delivery API:**
 
@@ -50,7 +50,7 @@ Both services expect an object in the following format:
 ```json
 {
     "recipient": "[email | phone]",
-    "message:" "Hi {{user_name}}, Your order has been successfully placed."
+    "message:" "Hi {user_name}, Your order has been successfully placed."
 }
 ```
 
