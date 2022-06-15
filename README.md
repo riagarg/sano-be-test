@@ -27,7 +27,7 @@ The test consist of creating a backoffice endpoint to allow our admin users to p
 
 2. Update the existing `GET /users/` endpoint to return an additional `orders` property, containing all DNAKitOrders associated with each user.
 
-3. Create tests for the above use cases. Notice that, the external delivery APIs should not be accessed during server tests, as its usage is limited to production only. However, we do want to test for the notification logic/code.
+3. Create tests for the above use cases. Notice that, the external delivery APIs should not be accessed during server tests, as its usage is limited to production only. However, we do want to test the notification logic/code.
 
 ## Email/SMS Delivery API integrations
 The goal here is to replicate a scenario where we need to integrate our application with an external service.
