@@ -52,7 +52,7 @@ Both services expect an object in the following format:
 ```json
 {
     "recipient": "[email | phone]",
-    "message:" "Hi {user_name}, Your order has been successfully placed."
+    "message": "Hi {user_name}, Your order has been successfully placed."
 }
 ```
 
