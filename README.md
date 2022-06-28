@@ -34,7 +34,7 @@ The test consist of creating a backoffice endpoint to allow our admin users to p
 3. Create tests for the above use cases. Notice that, the external delivery APIs should not be accessed during server tests, as their usage is limited to production only. **However, we do want to test the notification logic/code.**
 
 ## Email/SMS Delivery API integrations
-The goal here is to replicate a scenario where we need to integrate our application with an external service.
+The goal here is to replicate a scenario where we need to integrate our application with an external service (like [Postmark](https://postmarkapp.com/), [Amazon SES](https://aws.amazon.com/ses/) or [Twilio](https://www.twilio.com/messaging)).
 To make things easier, we have created two fake endpoints (they won't actually send emails nor SMSs) to mimic those external services:
 
 ### Email delivery API
