@@ -1,6 +1,5 @@
 /venv
 /secrets
-/.vscode
 /.tmontmp
 .testmondata
 .coverage

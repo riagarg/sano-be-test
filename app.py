@@ -1,7 +1,7 @@
 from flask import Flask
 
 from blueprints import register_blueprints
-from models import create_tables
+from core.models import create_tables
 
 
 def create_app():

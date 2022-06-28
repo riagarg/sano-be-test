@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify
-from models import User
-from schemas import UserSchema
+from core.models import User
+from core.schemas import UserSchema
 
 users_api = Blueprint("users_api", __name__)
 
