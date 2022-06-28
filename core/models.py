@@ -27,14 +27,14 @@ class BaseModel(Model):
 
 class User(BaseModel):
     email = CharField()
-    name = CharField(null=True)
     password_hash = CharField(255, null=True)
+    name = CharField(null=True)
+    address = JSONField(null=True)
 
 
 class DNAKitOrder(BaseModel):
     sequencing_type = CharField()  # ex: whole-exome-sequencing, targeted-sequencing
     user = ForeignKeyField(User, backref="orders")
-    # shipping_info examle: {"country": "GB", "delivery_name": "John Smith", "first_line": "38 Charlie Road", "postcode": "", "second_line": "", "town": "Cambridge"}
     shipping_info = JSONField()
 
     # TODO: how can we represent different states of an order? Ex: pending, in-progress, completed, etc.
