@@ -4,4 +4,5 @@
 .testmondata
 .coverage
 .idea/
+.vscode/
 __pycache__
