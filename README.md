@@ -21,20 +21,30 @@ flask run
 
 
 # Test tasks
-The test consist of creating a backoffice endpoint to allow our admin users to place DNA Kit Orders on behalf of users.
+The test consist of creating a backoffice endpoint to allow our admin users to place DNA Kit Orders for existing users.
 
-1. Create an endpoint that allows admin staff to place DNA Kit Orders on behalf of users
+1. Create an endpoint that allows admin staff to place DNA Kit Orders for existing users.
 
-    1.1. placing an order should notify the user that the order was successfully placed. We also would like to be able to specify the notification type (`email` or `sms`).
+    1.1. placing an order should notify the user that the order was successfully placed. We also would like to be able to specify the notification channel (`email` or `sms`).
     
     DNAKitOrders of type `whole-exome-sequencing` should notify users via SMS while other types should notify them via email. See **Email/SMS Delivery API integrations** below.
+    
+    1.2 We have been considering the creation of a **NotificationService**. Our first draft of how developers would interact with it looks like this:
+    ```python
+    notification_service.notify(user, message="Your order has been placed!", channel='sms')
+    ```
+    But we are open to suggestions!
+    We expect this service to be extended in the future (eg. add new channels like push notifications) with minimal changes to existing client code.
+
 
 2. Update the existing `GET /users/` endpoint to return an additional `orders` property, containing all DNAKitOrders associated with each user.
 
+
 3. Create tests for the above use cases. Notice that, the external delivery APIs should not be accessed during server tests, as their usage is limited to production only. **However, we do want to test the notification logic/code.**
 
+
 ## Email/SMS Delivery API integrations
-The goal here is to replicate a scenario where we need to integrate our application with an external service.
+The goal here is to replicate a scenario where we need to integrate our application with an external service (like [Postmark](https://postmarkapp.com/), [Amazon SES](https://aws.amazon.com/ses/) or [Twilio](https://www.twilio.com/messaging)).
 To make things easier, we have created two fake endpoints (they won't actually send emails nor SMSs) to mimic those external services:
 
 ### Email delivery API
