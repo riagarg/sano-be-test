@@ -17,4 +17,4 @@ jobs:
 workflows:
   tests:
     jobs:
-      - build_and_test
+      - pytest
