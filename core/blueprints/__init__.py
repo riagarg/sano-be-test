@@ -1,4 +1,4 @@
-from blueprints.users import users_api
+from .users import users_api
 
 
 def register_blueprints(app):

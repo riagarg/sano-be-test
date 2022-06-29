@@ -1,6 +1,6 @@
 from flask import Flask
 
-from blueprints import register_blueprints
+from core.blueprints import register_blueprints
 from core.models import create_tables
 
 
