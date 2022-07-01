@@ -1,13 +1,17 @@
-# Sano Genetics Backend Engineer Test
-Thank you for taking the time to work of the Sano Genetics Backend Engineer test!
+![image](https://user-images.githubusercontent.com/13378850/176657886-e99a1dff-afcf-431f-a093-757cddba0d15.png)
 
-Please fork this repo and ensure that **your forked repository is private**.
-To add your changes in your forked repository, please work on a branch other than master and submit a pull request from this branch to the master branch of your repository (**not our upstream repo**). This will allow us to see the changes clearly.
+# Sano Genetics Backend Engineer Test
+Thank you for taking the time to work on the Sano Genetics Backend Engineer test!
+
+⚠️ Please, create a **private** repository on GitHub and import this project.
+
+Instead of commiting your changes directly to the main/master branch, create a separate branch to commit your changes to. At the end of the test, submit a pull request to the main/master branch. This will allow us to see all the changes during the code review.
+
 Use as many commits as you normally would and write a detailed description for the PR to describe any decisions you've made and anything else you feel is relevant.
 
-Ideally, You should aim to spend no longer than 3 hours on the tasks. If you can’t completely finish it, that’s not a problem - just explain what is left to do and how you would do it.
+Ideally, you should aim to spend no longer than 3 hours on the tasks. If you can’t completely finish it, that’s not a problem - just explain what is left to do and how you would do it.
 
-If, due to time constraints, you prefer to take some shortcuts, or if you know that in a real world scenario you would implement a particular logic/code in a better way, please feel free to leave comments thoughout your code explaining your alternative approach.
+If, due to time constraints, you prefer to take some shortcuts, or in a real world scenario you would implement a particular logic/code in a better way, please feel free to leave comments thoughout your code explaining your alternative approach.
 
 
 # Installation
@@ -21,7 +25,7 @@ flask run
 
 
 # Test tasks
-The test consist of creating a business logic endpoint to allow our admin users to place DNA Kit Orders for existing users.
+The test consist of creating an endpoint to allow our admin users to place DNA Kit Orders for existing users.
 
 1. Create an endpoint that allows admin staff to place DNA Kit Orders for existing users.
 
@@ -86,9 +90,9 @@ For context, here's some of the things we expect to assess in this test:
 * Web standards
 * Error handling
 
-Feel free to refactor the provided boilerplate code and update anything that you think doesn't look right or could be improved.
+Feel free to refactor the provided boilerplate code or update anything that you think doesn't look right or could be improved.
 
 
 # Submitting the test
-Please email the fork/PR to us and give the GitHub users: `willgdjones`,  `jonathanmach` and `dsmurrell` access to the forked private repository.
+Please, give @sano-review access to the private repository and send us a link to the PR via email.
 
