@@ -94,5 +94,5 @@ Feel free to refactor the provided boilerplate code or update anything that you 
 
 
 # Submitting the test
-Please, give @sano-review access to the private repository and send us a link to the PR via email.
+Please, give the user [@sano-review](https://github.com/sano-review) access to the private repository and send us a link to the PR via email.
 
