@@ -1,14 +1,14 @@
-# Sano Genetics Backend Engineer test
+# Sano Genetics Backend Engineer Test
 Thank you for taking the time to work of the Sano Genetics Backend Engineer test!
 
-Please ensure that you have forked this project ensuring your forked repository is private. Please add your work to the fork and open a Pull request with your changes. Use the PR description to describe any decisions you've made and anything else you feel is relevant.
+Please fork this repo and ensure that **your forked repository is private**.
+To add your changes in your forked repository, please work on a branch other than master and submit a pull request from this branch to the master branch of your repository (**not our upstream repo**). This will allow us to see the changes clearly.
+Use as many commits as you normally would and write a detailed description for the PR to describe any decisions you've made and anything else you feel is relevant.
 
-You should ideally aim to spend no longer than 3 hours on the tasks. If you can’t completely finish that’s not a problem - just explain what is left to do and how you would do it.
+Ideally, You should aim to spend no longer than 3 hours on the tasks. If you can’t completely finish it, that’s not a problem - just explain what is left to do and how you would do it.
 
-If due to time constraints you prefer to take some shortcuts or if you know that in a real world scenario you would implement a particular logic/code in a better way, please feel free to leave comments thoughout your code explaining your alternative approach.
+If, due to time constraints, you prefer to take some shortcuts, or if you know that in a real world scenario you would implement a particular logic/code in a better way, please feel free to leave comments thoughout your code explaining your alternative approach.
 
-
-Please fork the repository ensuring your forked repository is private.
 
 # Installation
 This project was created using Python 3.8.10.
@@ -21,7 +21,7 @@ flask run
 
 
 # Test tasks
-The test consist of creating a backoffice endpoint to allow our admin users to place DNA Kit Orders for existing users.
+The test consist of creating a business logic endpoint to allow our admin users to place DNA Kit Orders for existing users.
 
 1. Create an endpoint that allows admin staff to place DNA Kit Orders for existing users.
 
@@ -43,7 +43,7 @@ The test consist of creating a backoffice endpoint to allow our admin users to p
 3. Create tests for the above use cases. Notice that, the external delivery APIs should not be accessed during server tests, as their usage is limited to production only. **However, we do want to test the notification logic/code.**
 
 
-## Email/SMS Delivery API integrations
+## Email/SMS delivery API integrations
 The goal here is to replicate a scenario where we need to integrate our application with an external service (like [Postmark](https://postmarkapp.com/), [Amazon SES](https://aws.amazon.com/ses/) or [Twilio](https://www.twilio.com/messaging)).
 To make things easier, we have created two fake endpoints (they won't actually send emails nor SMSs) to mimic those external services:
 
