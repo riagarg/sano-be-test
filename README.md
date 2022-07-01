@@ -29,7 +29,7 @@ The test consist of creating an endpoint to allow our admin users to place DNA K
 
 1. Create an endpoint that allows admin staff to place DNA Kit Orders for existing users.
 
-    1.1. placing an order should notify the user that the order was successfully placed. We also would like to be able to specify the notification channel (`email` or `sms`).
+    1.1. Placing an order should notify the user that the order was successfully placed. We also would like to be able to specify the notification channel (`email` or `sms`).
     
     DNAKitOrders of type `whole-exome-sequencing` should notify users via SMS while other types should notify them via email. See **Email/SMS Delivery API integrations** below.
     
@@ -94,7 +94,7 @@ Feel free to refactor the provided boilerplate code or update anything that you 
 
 
 # Submitting the test
-1. Please, give the user [@sano-review](https://github.com/sano-review) access to the private repository
+1. Please, give the GitHub user [@sano-review](https://github.com/sano-review) access to your private repository
 
 2. Create a Loom video to explain:
 * How you approached the test.
