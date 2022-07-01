@@ -3,7 +3,7 @@
 # Sano Genetics Backend Engineer Test
 Thank you for taking the time to work on the Sano Genetics Backend Engineer test!
 
-⚠️ Please, create a **private** repository on GitHub and import this project.
+⚠️ Please, **do not fork this repository**. Instead, clone it into your own **private** repository on GitHub.
 
 Instead of commiting your changes directly to the main/master branch, create a separate branch to commit your changes to. At the end of the test, submit a pull request to the main/master branch. This will allow us to see all the changes during the code review.
 
