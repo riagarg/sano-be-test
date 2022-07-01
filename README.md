@@ -94,5 +94,17 @@ Feel free to refactor the provided boilerplate code or update anything that you 
 
 
 # Submitting the test
-Please, give the user [@sano-review](https://github.com/sano-review) access to the private repository and send us a link to the PR via email.
+1. Please, give the user [@sano-review](https://github.com/sano-review) access to the private repository
 
+2. Create a Loom video to explain:
+* How you approached the test.
+* Where you took a pause to make a decision about any task. Why did you make that decision?
+* If you struggled with any parts of the test, what were they?
+* If you had more time, what would you improve or change?
+
+3. Send us an email with the following:
+
+* Link to your pull request
+* Loom video link
+
+Thank you and we hope you have fun with the test!
