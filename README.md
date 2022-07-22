@@ -94,17 +94,18 @@ Feel free to refactor the provided boilerplate code or update anything that you 
 
 
 # Submitting the test
-1. Please, give the GitHub user [@sano-review](https://github.com/sano-review) access to your private repository
 
-2. Create a Loom video to explain:
+1. Please create a Loom video to explain:
 * How you approached the test.
 * Where you took a pause to make a decision about any task. Why did you make that decision?
 * If you struggled with any parts of the test, what were they?
 * If you had more time, what would you improve or change?
 
-3. Send us an email with the following:
 
-* Link to your pull request
-* Loom video link
+2. Give the GitHub user [@sano-review](https://github.com/sano-review) access to your private repository
 
 Thank you and we hope you have fun with the test!
+
+# Solution
+
+This part is for you! Please drop your loom video link in here as well as anything else you'd like to add/link to.
