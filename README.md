@@ -95,7 +95,7 @@ Feel free to refactor the provided boilerplate code or update anything that you 
 
 # Submitting the test
 
-1. Please create a Loom video to explain:
+1. Please create a short Loom video (~5 minutes) to explain:
 * How you approached the test.
 * Where you took a pause to make a decision about any task. Why did you make that decision?
 * If you struggled with any parts of the test, what were they?
