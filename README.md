@@ -30,7 +30,7 @@ The goal of this task is to add an endpoint to our API that allows our admin use
 
 Placing an order should notify the user that the order was successfully placed. Admin users would also like to be able to specify the channel used to send the notification (`email` or `sms`).
 
-DNAKitOrders of type `whole-exome-sequencing` should notify users via `sms` while other types should notify them via `email`. To replicate a scenario where we need to integrate an external service (like [Postmark](https://postmarkapp.com/), [Amazon SES](https://aws.amazon.com/ses/) or [Twilio](https://www.twilio.com/messaging)) into your application. We have provided you a **Dummy Email Delivery Service** and a **Dummy SMS Delivery Service**, implemented as two endpoints on our development server, https://dev.sanogenetics.com. Note that these endpoints do not actually send emails or SMS messages and only serve to mimic the functionality of these external services.
+DNAKitOrders of type `whole-exome-sequencing` should notify users via `sms` while other types should notify them via `email`. To replicate a scenario where we need to integrate an external service (like [Postmark](https://postmarkapp.com/), [Amazon SES](https://aws.amazon.com/ses/), or [Twilio](https://www.twilio.com/messaging)) into your application. We have provided you a **Dummy Email Delivery Service** and a **Dummy SMS Delivery Service**, implemented as two endpoints on our development server, https://dev.sanogenetics.com. Note that these endpoints do not actually send emails or SMS messages and only serve to mimic the functionality of these external services.
 
 #### Dummy Email Delivery Service
 
@@ -90,7 +90,7 @@ Update the existing `GET /users/` endpoint to return an additional `orders` prop
 
 ## Task 3
 
-Create unit tests case for the above tasks. The external delivery APIs should not be accessed during server tests, as their usage should be limited to production only. However, we **do** want to test the logic of the notification code. You may want to consider mocking out these services as part of the your tests.
+Create test cases for the above tasks. The external delivery APIs should not be accessed during server tests, as their usage should be limited to production only. However, we **do** want to test the logic of the notification code.
 
 
 ## Additional details
