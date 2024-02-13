@@ -95,10 +95,10 @@ Create test cases for the above tasks. The external delivery APIs should not be 
 
 ## Additional details
 Here are some of the things we will be assessing in these tasks:
+* Web standards
+* Architecture & system design (large-scale API structuring, including the organization of layers, services, and other components)
 * Documentation and clarity
 * Testing 
-* Architecture & System design
-* Web standards
 * Error handling
 
 Feel free to refactor the provided boilerplate code or update anything that you think doesn't look right or could be improved.
@@ -111,6 +111,8 @@ Feel free to refactor the provided boilerplate code or update anything that you 
 * Where you took a pause to make a decision about any task. Why did you make that decision?
 * If you struggled with any parts of the test, what were they?
 * If you had more time, what would you improve or change?
+
+This video will help the team to understand your thought process and decision-making throughout the test. It gives us insight into how you tackle challenges, your problem-solving strategies, and your ability to communicate complex ideas effectively.
 
 
 2. Give the GitHub user [@sano-review](https://github.com/sano-review) access to your private repository
