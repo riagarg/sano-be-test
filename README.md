@@ -92,6 +92,7 @@ Update the existing `GET /users/` endpoint to return an additional `orders` prop
 
 Create test cases for the above tasks. The external delivery APIs should not be accessed during server tests, as their usage should be limited to production only. However, we **do** want to test the logic of the notification code.
 
+Assume this project is part of a large codebase and that the `NotificationService` will be used across various domains within our application.
 
 ## Additional details
 Here are some of the things we will be assessing in these tasks:
