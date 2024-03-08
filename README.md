@@ -48,7 +48,7 @@ Example of the expected payload:
 
 ```json
 {
-    "recipient": "user@email.com",
+    "email": "user@email.com",
     "message": "Hi {user_name}, your order has been successfully placed."
 }
 ```
@@ -67,8 +67,8 @@ Authorization: Bearer o8deGqg2vTGYXtvIsA05zOW8ywAPBQuB
 Example of the expected payload:
 ```json
 {
-    "recipient": "07451277972",
-    "message": "Hi {user_name}, your order has been successfully placed."
+    "phone_number": "07451277972",
+    "text": "Hi {user_name}, your order has been successfully placed."
 }
 ```
 
