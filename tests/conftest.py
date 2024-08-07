@@ -16,6 +16,7 @@ def test_client():
             yield testing_client  # this is where the testing happens!
         # drop_tables()
 
+#Populate the db with sample data
 @pytest.fixture(scope='module')
 def data():
     user1 = User.create(name="Jane Doe", email="jane@gmail.com", phone_number="07451277972", password_hash="janepass", address="1 main st")
@@ -27,6 +28,7 @@ def data():
     DNAKitOrder.delete().execute()
     User.delete().execute()
 
+#Used to mock requests to external email/sms notif service 
 @pytest.fixture
 def mock_requests_post():
     with patch('requests.post') as mock_post:
