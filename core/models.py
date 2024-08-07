@@ -8,7 +8,6 @@ db = SqliteExtDatabase(
     pragmas=(("foreign_keys", 1),),  # Enforce foreign-key constraints.
 )
 
-
 class BaseModel(Model):
     id = CharField(primary_key=True, default=lambda: shortuuid.uuid())
     created_at = DateTimeField(default=lambda: dt.now())
@@ -30,6 +29,7 @@ class User(BaseModel):
     password_hash = CharField(255, null=True)
     name = CharField(null=True)
     address = JSONField(null=True)
+    phone_number = CharField(null=True)
 
 
 class DNAKitOrder(BaseModel):
@@ -39,7 +39,10 @@ class DNAKitOrder(BaseModel):
 
     # TODO: how can we represent different states of an order? Ex: pending, in-progress, completed, etc.
 
-
 def create_tables():
     with db:
         db.create_tables([User, DNAKitOrder], safe=True)
+
+def drop_tables():
+    with db:
+        db.drop_tables([User, DNAKitOrder], safe=True)
