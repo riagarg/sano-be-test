@@ -5,7 +5,7 @@ from unittest.mock import Mock, patch
 class TestOrders:
     def test_order_placement(self, test_client, data, mock_requests_post):
         user = User.get(name="Jane Doe")
-        url = f"/users/{user.id}/order"
+        url = f"/users/{user.id}/dnakitorders"
         response = test_client.post(url, data={"sequencing_type": "sequence type 1", "shipping_info": "1 main st"})
 
         # print(mock_requests_post.call_args_list)

@@ -18,7 +18,7 @@ def get_all_users():
     user_schema = UserSchema(many=True)
     return jsonify(user_schema.dump(users))
 
-@users_api.route("/users/<user_id>/order", methods=["POST"])
+@users_api.route("/users/<user_id>/dnakitorders", methods=["POST"])
 def post_order(user_id):
     try : 
         user = User.get(id=user_id) 

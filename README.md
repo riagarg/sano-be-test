@@ -124,3 +124,12 @@ Thank you and we hope you have fun with the test!
 
 [Loom Link](https://www.loom.com/share/f012c7e8c87d44d0971a3626d119c87d?sid=c4a678c3-1849-4c60-b5cc-b52ed10a694b)
 
+Task 1: 
+   In the first task, we create an orders endpoint and notify our user that their order has been placed. The orders enpoint is in the Users API with the URL `/users/<user_id>/dnakitorders`. It is given this name because orders are organized and placed per user. In logic for the endpoint, we save an DNAKitOrder object to the DNAKitOrders table and call the `NotificationService` to notify Sano's customers that their order has been placed. 
+   We create the `NotificationService` separately in its own class, so it can be called by other services in the future. The service currently calls the message delivery service with a given message, channel, and user. 
+
+Task 2:
+    To get all the Users and their associated DNAKitOrders, we simply add a nested field to the Users serializer, a serializer for DNAKitOrders, and prefetch the orders when grabbing the Users. 
+
+Task 3:
+    In testing, we put all the fixtures to populate the database in the Conftest.py file and the unit tests in the `test_orders.py` and `test_users.py`. We are testing to ensure the POST orders populates the database with an order with the correct information as well as calls the messaging delivery service enpoints correctly. For the `GET /users` endpoints, we make sure we get all the users and their associated orders properly.
