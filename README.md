@@ -122,4 +122,5 @@ Thank you and we hope you have fun with the test!
 
 # Solution
 
-This part is for you! Please drop your loom video link in here as well as anything else you'd like to add/link to.
+[Loom Link](https://www.loom.com/share/f012c7e8c87d44d0971a3626d119c87d?sid=c4a678c3-1849-4c60-b5cc-b52ed10a694b)
+
